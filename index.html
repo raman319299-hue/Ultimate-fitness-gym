@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ULTIMATE FITNESS GYM | Best Gym in Thakurganj, Lucknow | Build Strength & Confidence</title>
+<meta name="description" content="Ultimate Fitness Gym, Hardoi Road, Thakurganj Lucknow. Rated 4.8 from 505+ reviews. Strength, Cardio, CrossFit, Aerobics, Dance Fitness. Open till 10 PM. Call 090447 30631">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#07090D',
+        coal: '#0D1117',
+        card: '#11161D',
+        line: '#1E2631',
+        volt: '#FFD400',
+        volt2: '#FF7A00',
+        blood: '#FF2A2A',
+      },
+      fontFamily: {
+        anton: ['Anton','sans-serif'],
+        bebas: ['"Bebas Neue"','sans-serif'],
+        oswald: ['Oswald','sans-serif'],
+        inter: ['Inter','sans-serif'],
+      }
+    }
+  }
+}
+</script>
+<style>
+*{ -webkit-tap-highlight-color:transparent; }
+html{ scroll-behavior:smooth; }
+body{ font-family:'Inter',sans-serif; background:#07090D; color:#E8ECF1; overflow-x:hidden; }
+::selection{ background:#FFD400; color:#000; }
+::-webkit-scrollbar{ width:10px; }
+::-webkit-scrollbar-track{ background:#07090D; }
+::-webkit-scrollbar-thumb{ background:linear-gradient(#FFD400,#FF7A00); border-radius:99px; }
+.font-anton{ font-family:'Anton',sans-serif; }
+.text-stroke{ -webkit-text-stroke:1.5px #FFD400; color:transparent; }
+.text-stroke-white{ -webkit-text-stroke:1.5px rgba(255,255,255,.85); color:transparent; }
+@media(max-width:640px){ .text-stroke{ -webkit-text-stroke:1px #FFD400; } }
+.grain::after{ content:''; position:fixed; inset:0; pointer-events:none; z-index:5; opacity:.07; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.hero-kenburns{ animation:kenburns 22s ease-in-out infinite alternate; }
+@keyframes kenburns{ 0%{ transform:scale(1) translate(0,0);} 100%{ transform:scale(1.18) translate(-2%, -2%);} }
+.float-orb{ position:absolute; border-radius:50%; filter:blur(90px); opacity:.35; pointer-events:none; animation:orbFloat 8s ease-in-out infinite alternate; }
+@keyframes orbFloat{ 0%{ transform:translateY(0) scale(1);} 100%{ transform:translateY(-40px) scale(1.15);} }
+.marquee-track{ display:flex; width:max-content; animation:marquee 22s linear infinite; }
+@keyframes marquee{ to{ transform:translateX(-50%);} }
+.marquee-track:hover{ animation-play-state:paused; }
+.btn-volt{ background:linear-gradient(135deg,#FFD400 0%,#FF9A00 60%,#FF6A00 100%); color:#000; font-weight:900; letter-spacing:.06em; box-shadow:0 10px 30px -8px rgba(255,212,0,.55), inset 0 1px 0 rgba(255,255,255,.6); transition:.3s; position:relative; overflow:hidden; }
+.btn-volt::after{ content:''; position:absolute; top:0; left:-80%; width:60%; height:100%; background:linear-gradient(105deg,transparent,rgba(255,255,255,.7),transparent); transform:skewX(-20deg); transition:.6s; }
+.btn-volt:hover::after{ left:130%; }
+.btn-volt:hover{ transform:translateY(-2px); box-shadow:0 18px 40px -8px rgba(255,150,0,.65); }
+.btn-ghost{ border:1px solid rgba(255,255,255,.25); backdrop-filter:blur(12px); background:rgba(255,255,255,.06); transition:.3s; }
+.btn-ghost:hover{ border-color:#FFD400; color:#FFD400; background:rgba(255,212,0,.08); transform:translateY(-2px); }
+.card-premium{ background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.09); backdrop-filter:blur(14px); transition:.4s cubic-bezier(.2,.8,.2,1); position:relative; overflow:hidden; }
+.card-premium::before{ content:''; position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg,transparent,#FFD400,transparent); opacity:0; transition:.4s; }
+.card-premium:hover{ transform:translateY(-8px); border-color:rgba(255,212,0,.45); box-shadow:0 25px 60px -15px rgba(0,0,0,.8), 0 0 0 1px rgba(255,212,0,.15), 0 15px 40px -15px rgba(255,180,0,.3); }
+.card-premium:hover::before{ opacity:1; }
+.glass-nav{ background:rgba(7,9,13,.82); backdrop-filter:blur(18px); border-bottom:1px solid rgba(255,255,255,.08); }
+.nav-link{ position:relative; font-size:12.5px; font-weight:700; letter-spacing:.12em; color:#CBD5E1; transition:.25s; text-transform:uppercase; }
+.nav-link::after{ content:''; position:absolute; left:0; bottom:-6px; width:0; height:2px; background:#FFD400; transition:.3s; }
+.nav-link:hover, .nav-link.active{ color:#fff; }
+.nav-link:hover::after, .nav-link.active::after{ width:100%; }
+.reveal{ opacity:0; transform:translateY(40px); transition:all .9s cubic-bezier(.16,1,.3,1); }
+.reveal.visible{ opacity:1; transform:translateY(0); }
+.gallery-item img{ transition:transform .8s cubic-bezier(.2,.8,.2,1), filter .5s; }
+.gallery-item:hover img{ transform:scale(1.12); }
+.gallery-item .overlay{ opacity:0; transition:.4s; }
+.gallery-item:hover .overlay{ opacity:1; }
+.clip-slant{ clip-path:polygon(0 0,100% 0,100% calc(100% - 28px),0 100%); }
+.diag{ background:repeating-linear-gradient(-45deg,rgba(255,212,0,.12) 0 12px,transparent 12px 24px); }
+.pulse-dot{ position:relative; }
+.pulse-dot::after{ content:''; position:absolute; inset:-4px; border-radius:50%; border:2px solid #22c55e; animation:pulseRing 1.8s ease-out infinite; }
+@keyframes pulseRing{ 0%{ transform:scale(.6); opacity:1;} 100%{ transform:scale(1.4); opacity:0;} }
+.scroll-hint{ width:26px; height:44px; border:2px solid rgba(255,255,255,.4); border-radius:20px; display:flex; justify-content:center; padding-top:8px; }
+.scroll-hint span{ width:4px; height:8px; background:#FFD400; border-radius:99px; animation:scrollDot 1.8s infinite; }
+@keyframes scrollDot{ 0%{ transform:translateY(0); opacity:1;} 70%{ transform:translateY(14px); opacity:0;} 100%{ opacity:0;} }
+.review-track{ display:flex; gap:1.25rem; transition:transform .6s cubic-bezier(.2,.8,.2,1); }
+.tilt{ transform-style:preserve-3d; }
+input,select,textarea{ outline:none; }
+input:focus,select:focus,textarea:focus{ border-color:#FFD400 !important; box-shadow:0 0 0 3px rgba(255,212,0,.15); }
+#preloader{ position:fixed; inset:0; z-index:100; background:#07090D; display:flex; align-items:center; justify-content:center; flex-direction:column; transition:opacity .6s, visibility .6s; }
+#preloader.hide{ opacity:0; visibility:hidden; }
+.loader-bar{ width:220px; height:3px; background:#1e2631; border-radius:99px; overflow:hidden; margin-top:18px; }
+.loader-bar div{ height:100%; width:0%; background:linear-gradient(90deg,#FFD400,#FF7A00); animation:load 1.8s ease forwards; }
+@keyframes load{ to{ width:100%;} }
+.dumbbell-spin{ animation:dspin 1.2s ease-in-out infinite alternate; }
+@keyframes dspin{ 0%{ transform:rotate(-8deg);} 100%{ transform:rotate(8deg);} }
+.tab-active{ background:#FFD400 !important; color:#000 !important; border-color:#FFD400 !important; }
+.lightbox-open{ overflow:hidden; }
+.tick{ color:#FFD400; }
+.price-pop{ background:linear-gradient(135deg,#FFD400,#FF7A00); color:#000; }
+.faq-a{ max-height:0; overflow:hidden; transition:max-height .5s ease; }
+.faq-open .faq-a{ max-height:300px; }
+.faq-open .faq-icon{ transform:rotate(45deg); background:#FFD400; color:#000; }
+#mobileMenu{ transition:.45s cubic-bezier(.2,.8,.2,1); }
+.badge-shine{ position:relative; overflow:hidden; }
+.badge-shine::after{ content:''; position:absolute; top:0; left:-60%; width:40%; height:100%; background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent); animation:shine 3s infinite; }
+@keyframes shine{ 0%{ left:-60%;} 60%,100%{ left:130%;} }
+</style>
+</head>
+<body class="grain antialiased">
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="flex items-center gap-3">
+    <div class="w-12 h-12 rounded-xl price-pop flex items-center justify-center text-2xl dumbbell-spin"><i class="fa-solid fa-dumbbell"></i></div>
+    <div>
+      <div class="font-anton text-2xl tracking-wide leading-none">ULTIMATE <span class="text-[#FFD400]">FITNESS</span></div>
+      <div class="text-[11px] tracking-[.35em] text-gray-400 font-bold">THAKURGANJ • LUCKNOW</div>
+    </div>
+  </div>
+  <div class="loader-bar"><div></div></div>
+  <div class="mt-3 text-xs tracking-widest text-gray-500 font-bold">LOADING POWER...</div>
+</div>
+
+<!-- TOP STRIP -->
+<div class="bg-gradient-to-r from-[#FFD400] via-[#FFB800] to-[#FF7A00] text-black text-[12px] md:text-[13px] font-bold">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-2">
+    <div class="flex items-center gap-2 truncate">
+      <span class="hidden sm:inline-flex items-center gap-1 bg-black text-[#FFD400] px-2 py-[2px] rounded-full text-[11px]"><span class="w-2 h-2 rounded-full bg-green-500 pulse-dot inline-block"></span> <span id="openStatusTop">OPEN NOW • CLOSES 10 PM</span></span>
+      <span class="truncate"><i class="fa-solid fa-location-dot mr-1"></i> Hardoi Rd, Near Manju Tandon Hospital, Thakurganj, Lucknow 226003</span>
+    </div>
+    <a href="tel:+919044730631" class="shrink-0 bg-black text-white px-3 py-1 rounded-full hover:bg-neutral-900 flex items-center gap-2"><i class="fa-solid fa-phone text-[#FFD400] text-xs"></i> 090447 30631</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<header id="navbar" class="sticky top-0 z-50 glass-nav">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 h-[72px] flex items-center justify-between gap-4">
+    <a href="#home" class="flex items-center gap-3 group">
+      <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] flex items-center justify-center text-black text-xl font-black shadow-[0_8px_25px_-6px_rgba(255,180,0,.6)] group-hover:rotate-12 transition"><i class="fa-solid fa-dumbbell"></i></div>
+      <div class="leading-none">
+        <div class="font-anton text-[18px] md:text-[20px] tracking-wide">ULTIMATE <span class="text-[#FFD400]">FITNESS</span></div>
+        <div class="text-[10px] tracking-[.3em] text-gray-400 font-bold">GYM • LUCKNOW</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-6">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#facilities" class="nav-link">Facilities</a>
+      <a href="#trainers" class="nav-link">Trainers</a>
+      <a href="#membership" class="nav-link">Membership</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="https://www.google.com/maps/search/?api=1&query=Ultimate+Fitness+Gym+Hardoi+Road+Thakurganj+Lucknow" target="_blank" class="hidden md:inline-flex btn-ghost px-4 py-2.5 rounded-full text-xs font-bold tracking-widest"><i class="fa-solid fa-diamond-turn-right mr-1 text-[#FFD400]"></i> GET DIRECTIONS</a>
+      <a href="#membership" class="btn-volt px-5 py-2.5 rounded-full text-xs hidden sm:inline-flex items-center gap-2">JOIN NOW <i class="fa-solid fa-arrow-right text-[11px]"></i></a>
+      <button id="hamburger" class="lg:hidden w-11 h-11 rounded-xl border border-white/15 bg-white/5 flex flex-col items-center justify-center gap-[5px]">
+        <span class="w-5 h-[2px] bg-white block transition-all" id="hb1"></span>
+        <span class="w-5 h-[2px] bg-[#FFD400] block transition-all" id="hb2"></span>
+        <span class="w-5 h-[2px] bg-white block transition-all" id="hb3"></span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="lg:hidden max-h-0 overflow-hidden border-t border-white/5 bg-[#0A0E14]/95 backdrop-blur-xl">
+    <div class="px-5 py-5 grid grid-cols-2 gap-2 text-sm font-bold tracking-widest">
+      <a href="#home" class="mob-link px-4 py-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2"><i class="fa-solid fa-house text-[#FFD400]"></i> HOME</a>
+      <a href="#about" class="mob-link px-4 py-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2"><i class="fa-solid fa-circle-info text-[#FFD400]"></i> ABOUT</a>
+      <a href="#services" class="mob-link px-4 py-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2"><i class="fa-solid fa-heart-pulse text-[#FFD400]"></i> SERVICES</a>
+      <a href="#facilities" class="mob-link px-4 py-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2"><i class="fa-solid fa-building text-[#FFD400]"></i> FACILITIES</a>
+      <a href="#trainers" class="mob-link px-4 py-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2"><i class="fa-solid fa-user-ninja text-[#FFD400]"></i> TRAINERS</a>
+      <a href="#membership" class="mob-link px-4 py-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2"><i class="fa-solid fa-crown text-[#FFD400]"></i> MEMBERSHIP</a>
+      <a href="#gallery" class="mob-link px-4 py-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2"><i class="fa-solid fa-images text-[#FFD400]"></i> GALLERY</a>
+      <a href="#contact" class="mob-link px-4 py-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2"><i class="fa-solid fa-phone text-[#FFD400]"></i> CONTACT</a>
+      <a href="tel:+919044730631" class="col-span-2 btn-volt rounded-xl py-3.5 text-center text-sm"><i class="fa-solid fa-phone mr-2"></i> CALL 090447 30631</a>
+      <a href="#membership" class="mob-link col-span-2 text-center py-2 text-[#FFD400] text-xs tracking-[.25em]">JOIN NOW — START TODAY →</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative min-h-[100svh] flex items-center overflow-hidden -mt-[1px]">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2000&auto=format&fit=crop" alt="Ultimate Fitness Gym" class="w-full h-full object-cover hero-kenburns">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#07090D] via-[#07090D]/85 to-[#07090D]/30"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-[#07090D]/70"></div>
+    <div class="float-orb w-[420px] h-[420px] bg-[#FFD400]/30 -left-32 top-20"></div>
+    <div class="float-orb w-[320px] h-[320px] bg-[#FF5A00]/40 right-10 bottom-10" style="animation-delay:-4s"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-16 md:py-20 w-full grid lg:grid-cols-[1.15fr_.85fr] gap-10 items-center">
+    <div>
+      <div class="reveal inline-flex items-center gap-3 bg-white/8 border border-white/15 backdrop-blur-xl rounded-full pl-2 pr-4 py-1.5 mb-6 badge-shine">
+        <span class="bg-green-500 text-black text-[11px] font-black px-2.5 py-1 rounded-full flex items-center gap-1.5"><span class="w-2 h-2 bg-white rounded-full animate-ping"></span> OPEN NOW</span>
+        <span class="text-[12px] md:text-[13px] font-semibold text-gray-200 tracking-wide">Closes 10:00 PM • Thakurganj, Lucknow</span>
+      </div>
+
+      <h1 class="reveal font-anton leading-[.95] text-[44px] sm:text-[64px] md:text-[84px] lg:text-[92px]">
+        BUILD YOUR<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD400] via-[#FFB800] to-[#FF6A00]">BODY.</span> BUILD<br>
+        YOUR <span class="text-stroke">CONFIDENCE.</span>
+      </h1>
+
+      <p class="reveal mt-5 text-gray-300 text-[15px] md:text-[18px] leading-relaxed max-w-xl">Ultimate Fitness Gym – Your destination for <span class="text-white font-bold">strength, fitness and a healthier lifestyle</span> in Lucknow. Modern machines. Real coaching. Real results.</p>
+
+      <div class="reveal flex flex-wrap gap-3 mt-8">
+        <a href="#membership" class="btn-volt px-8 py-4 rounded-full text-sm flex items-center gap-2"><i class="fa-solid fa-bolt"></i> JOIN NOW <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:+919044730631" class="btn-ghost px-8 py-4 rounded-full text-sm font-black tracking-widest flex items-center gap-2"><span class="w-8 h-8 rounded-full bg-[#FFD400] text-black flex items-center justify-center animate-pulse"><i class="fa-solid fa-phone text-xs"></i></span> CALL NOW</a>
+      </div>
+
+      <div class="reveal mt-7 flex flex-wrap items-center gap-3">
+        <div class="flex items-center gap-3 bg-white/[.07] border border-white/15 rounded-2xl px-4 py-3 backdrop-blur-xl">
+          <div class="flex text-[#FFD400] text-sm gap-[2px]">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="leading-tight">
+            <div class="font-black text-white text-sm">4.8/5 Rating</div>
+            <div class="text-[12px] text-gray-400 font-semibold">505+ Google Reviews <span class="text-green-400">• Verified</span></div>
+          </div>
+          <div class="w-9 h-9 rounded-full bg-white flex items-center justify-center font-black text-blue-600 text-lg ml-1">G</div>
+        </div>
+        <div class="hidden sm:flex items-center gap-2 text-[12px] font-black tracking-[.22em] text-gray-300">
+          <span>TRAIN HARD</span><span class="text-[#FFD400]">•</span><span>STAY STRONG</span><span class="text-[#FFD400]">•</span><span>BECOME BETTER</span>
+        </div>
+      </div>
+      <div class="sm:hidden mt-4 text-[11px] font-black tracking-[.22em] text-gray-300">TRAIN HARD • STAY STRONG • BECOME BETTER</div>
+
+      <div class="reveal grid grid-cols-3 gap-3 mt-8 max-w-lg">
+        <div class="card-premium rounded-2xl p-4 text-center"><div class="font-anton text-2xl md:text-3xl text-[#FFD400]"><span class="counter" data-target="505">0</span>+</div><div class="text-[11px] font-bold tracking-widest text-gray-400 mt-1">HAPPY REVIEWS</div></div>
+        <div class="card-premium rounded-2xl p-4 text-center"><div class="font-anton text-2xl md:text-3xl text-[#FFD400]"><span class="counter" data-target="50">0</span>+</div><div class="text-[11px] font-bold tracking-widest text-gray-400 mt-1">MACHINES</div></div>
+        <div class="card-premium rounded-2xl p-4 text-center"><div class="font-anton text-2xl md:text-3xl text-[#FFD400]">10<span class="text-base">PM</span></div><div class="text-[11px] font-bold tracking-widest text-gray-400 mt-1">OPEN TILL</div></div>
+      </div>
+    </div>
+
+    <!-- Hero side card -->
+    <div class="reveal hidden lg:block">
+      <div class="relative tilt" id="heroCard">
+        <div class="absolute -inset-3 bg-gradient-to-br from-[#FFD400]/40 to-transparent rounded-[28px] blur-2xl"></div>
+        <div class="relative bg-[#0D1117]/90 border border-white/12 rounded-[26px] overflow-hidden backdrop-blur-xl">
+          <div class="relative h-[300px]">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover" alt="Training">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0D1117] to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-black/70 backdrop-blur px-3 py-1.5 rounded-full text-[11px] font-black tracking-widest text-[#FFD400] border border-[#FFD400]/30"><i class="fa-solid fa-fire mr-1"></i> ADMISSIONS OPEN</div>
+            <div class="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+              <div><div class="font-anton text-2xl">TODAY'S ENERGY</div><div class="text-xs text-gray-400 font-semibold">Morning 5AM–10AM • Evening 4PM–10PM</div></div>
+              <div class="text-right"><div class="font-anton text-[#FFD400] text-3xl">98%</div><div class="text-[10px] font-bold tracking-widest text-gray-400">RESULT RATE</div></div>
+            </div>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <div class="text-xs font-black tracking-[.2em] text-gray-400">FREE TRIAL WORKOUT</div>
+              <div class="text-xs font-bold text-green-400"><i class="fa-solid fa-circle-check mr-1"></i> 12 slots left</div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 text-[13px] font-semibold">
+              <div class="bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 flex items-center gap-2"><i class="fa-solid fa-dumbbell text-[#FFD400]"></i> Strength Zone</div>
+              <div class="bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 flex items-center gap-2"><i class="fa-solid fa-heart-pulse text-[#FFD400]"></i> Cardio Zone</div>
+              <div class="bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 flex items-center gap-2"><i class="fa-solid fa-person-running text-[#FFD400]"></i> CrossFit</div>
+              <div class="bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 flex items-center gap-2"><i class="fa-solid fa-music text-[#FFD400]"></i> Zumba & Dance</div>
+            </div>
+            <a href="tel:+919044730631" class="mt-4 w-full btn-volt rounded-xl py-3.5 text-sm flex items-center justify-center gap-2"><i class="fa-solid fa-phone"></i> BOOK FREE TRIAL — CALL NOW</a>
+            <div class="mt-3 text-center text-[12px] text-gray-400">No joining fee this week • <span class="text-[#FFD400] font-bold">Save ₹1000</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+    <div class="scroll-hint"><span></span></div>
+    <div class="text-[10px] tracking-[.3em] font-bold text-gray-400">SCROLL</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="bg-[#FFD400] text-black overflow-hidden py-3 -rotate-[.6deg] scale-[1.02] border-y-4 border-black relative z-20">
+  <div class="marquee-track font-anton text-lg md:text-xl tracking-wide gap-0">
+    <div class="flex shrink-0 items-center gap-8 pr-8">
+      <span>STRENGTH <i class="fa-solid fa-star text-xs"></i></span><span>CARDIO <i class="fa-solid fa-star text-xs"></i></span><span>CROSSFIT <i class="fa-solid fa-star text-xs"></i></span><span>AEROBICS <i class="fa-solid fa-star text-xs"></i></span><span>DANCE FITNESS <i class="fa-solid fa-star text-xs"></i></span><span>CYCLING <i class="fa-solid fa-star text-xs"></i></span><span>WEIGHT LOSS <i class="fa-solid fa-star text-xs"></i></span><span>MUSCLE GAIN <i class="fa-solid fa-star text-xs"></i></span>
+    </div>
+    <div class="flex shrink-0 items-center gap-8 pr-8" aria-hidden="true">
+      <span>STRENGTH <i class="fa-solid fa-star text-xs"></i></span><span>CARDIO <i class="fa-solid fa-star text-xs"></i></span><span>CROSSFIT <i class="fa-solid fa-star text-xs"></i></span><span>AEROBICS <i class="fa-solid fa-star text-xs"></i></span><span>DANCE FITNESS <i class="fa-solid fa-star text-xs"></i></span><span>CYCLING <i class="fa-solid fa-star text-xs"></i></span><span>WEIGHT LOSS <i class="fa-solid fa-star text-xs"></i></span><span>MUSCLE GAIN <i class="fa-solid fa-star text-xs"></i></span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="relative py-20 md:py-28 overflow-hidden">
+  <div class="float-orb w-[500px] h-[500px] bg-[#FFD400]/10 right-[-150px] top-10"></div>
+  <div class="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal relative order-2 lg:order-1">
+      <div class="absolute -inset-4 bg-gradient-to-tr from-[#FFD400]/20 to-transparent rounded-[30px] blur-2xl"></div>
+      <div class="relative grid grid-cols-2 gap-4">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e38?q=80&w=800&auto=format&fit=crop" class="rounded-2xl h-[280px] md:h-[360px] w-full object-cover border border-white/10" alt="Gym">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" class="rounded-2xl h-[280px] md:h-[360px] w-full object-cover mt-8 border border-white/10" alt="Training">
+      </div>
+      <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 lg:left-8 lg:translate-x-0 bg-[#0D1117]/95 border border-[#FFD400]/30 rounded-2xl px-5 py-4 flex items-center gap-4 shadow-2xl backdrop-blur-xl w-[92%] sm:w-auto">
+        <div class="w-14 h-14 rounded-xl price-pop flex items-center justify-center text-2xl font-anton">4.8</div>
+        <div><div class="text-[#FFD400] text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="font-bold text-sm">Loved by Lucknow</div><div class="text-xs text-gray-400">505+ verified Google reviews</div></div>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <div class="reveal inline-flex items-center gap-2 text-[#FFD400] font-black text-[12px] tracking-[.3em]"><span class="w-10 h-[2px] bg-[#FFD400] inline-block"></span> ABOUT US</div>
+      <h2 class="reveal font-anton text-[36px] md:text-[56px] leading-[1.02] mt-4">MORE THAN A GYM.<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD400] to-[#FF7A00]">IT'S YOUR FITNESS</span><br>JOURNEY.</h2>
+      <p class="reveal mt-6 text-gray-300 leading-relaxed text-[15px] md:text-[16.5px]">Welcome to <span class="text-white font-bold">Ultimate Fitness Gym</span>, a modern fitness destination in Lucknow designed for people who are serious about becoming stronger, healthier and more confident. Whether you're starting your fitness journey or are already experienced, our gym provides a motivating environment where you can focus on your goals.</p>
+      <p class="reveal mt-4 text-gray-400 leading-relaxed text-[14.5px]">Train with dedication. Stay consistent. Become the best version of yourself — with certified trainers, structured plans and an atmosphere that pushes you forward every single rep.</p>
+      <div class="reveal grid grid-cols-3 gap-3 mt-8">
+        <div class="card-premium rounded-2xl p-4 text-center"><div class="text-2xl mb-1">⭐</div><div class="font-anton text-xl">4.8 RATED</div><div class="text-[11px] text-gray-400 font-bold tracking-widest">GOOGLE RATING</div></div>
+        <div class="card-premium rounded-2xl p-4 text-center"><div class="text-2xl mb-1">💪</div><div class="font-anton text-xl">505+ REVIEWS</div><div class="text-[11px] text-gray-400 font-bold tracking-widest">HAPPY MEMBERS</div></div>
+        <div class="card-premium rounded-2xl p-4 text-center"><div class="text-2xl mb-1">🕙</div><div class="font-anton text-xl">10 PM</div><div class="text-[11px] text-gray-400 font-bold tracking-widest">CLOSING TIME</div></div>
+      </div>
+      <div class="reveal flex flex-wrap gap-3 mt-8">
+        <a href="#gallery" class="btn-volt px-7 py-3.5 rounded-full text-[13px]">EXPLORE GYM <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Ultimate+Fitness+Gym+Hardoi+Road+Thakurganj+Lucknow" target="_blank" class="btn-ghost px-7 py-3.5 rounded-full text-[13px] font-black tracking-widest"><i class="fa-solid fa-location-dot text-[#FFD400] mr-1"></i> VISIT US</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="py-20 md:py-24 bg-[#0A0E14] relative overflow-hidden border-y border-white/5">
+  <div class="absolute inset-0 diag opacity-[.35]"></div>
+  <div class="max-w-7xl mx-auto px-4 md:px-6 relative">
+    <div class="text-center max-w-2xl mx-auto">
+      <div class="reveal inline-flex items-center gap-2 text-[#FFD400] font-black text-[12px] tracking-[.3em] justify-center"><span class="w-8 h-[2px] bg-[#FFD400]"></span> WHY CHOOSE US <span class="w-8 h-[2px] bg-[#FFD400]"></span></div>
+      <h2 class="reveal font-anton text-[36px] md:text-[56px] mt-3">WHY <span class="text-[#FFD400]">ULTIMATE</span> FITNESS GYM?</h2>
+      <p class="reveal text-gray-400 mt-3">Everything you need to start, stay and succeed — under one roof in Thakurganj.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+      <div class="reveal card-premium rounded-3xl p-7 group"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] text-black text-2xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-6 transition"><i class="fa-solid fa-dumbbell"></i></div><h3 class="font-anton text-xl tracking-wide">MODERN EQUIPMENT</h3><p class="text-gray-400 text-sm mt-2 leading-relaxed">Imported strength machines, free weights, functional rigs & latest cardio consoles for safe, effective training.</p><div class="mt-4 text-[12px] font-black tracking-widest text-[#FFD400]">STRENGTH • CARDIO • FUNCTIONAL →</div></div>
+      <div class="reveal card-premium rounded-3xl p-7 group"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] text-black text-2xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-6 transition"><i class="fa-solid fa-fire-flame-curved"></i></div><h3 class="font-anton text-xl tracking-wide">FITNESS ENVIRONMENT</h3><p class="text-gray-400 text-sm mt-2 leading-relaxed">High-energy music, motivating coaches, clean airy floor — an atmosphere that makes you want to show up daily.</p><div class="mt-4 text-[12px] font-black tracking-widest text-[#FFD400]">MOTIVATION • VIBE • ENERGY →</div></div>
+      <div class="reveal card-premium rounded-3xl p-7 group"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] text-black text-2xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-6 transition"><i class="fa-solid fa-layer-group"></i></div><h3 class="font-anton text-xl tracking-wide">COMPLETE WORKOUT</h3><p class="text-gray-400 text-sm mt-2 leading-relaxed">Strength + cardio + mobility + diet guidance. Full-body transformation plans, not just random workouts.</p><div class="mt-4 text-[12px] font-black tracking-widest text-[#FFD400]">360° FITNESS PLAN →</div></div>
+      <div class="reveal card-premium rounded-3xl p-7 group"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] text-black text-2xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-6 transition"><i class="fa-solid fa-seedling"></i></div><h3 class="font-anton text-xl tracking-wide">BEGINNER FRIENDLY</h3><p class="text-gray-400 text-sm mt-2 leading-relaxed">New to gym? Personal attention, correct form teaching & starter plans make your first month easy and safe.</p><div class="mt-4 text-[12px] font-black tracking-widest text-[#FFD400]">ZERO TO HERO →</div></div>
+      <div class="reveal card-premium rounded-3xl p-7 group"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] text-black text-2xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-6 transition"><i class="fa-solid fa-shuffle"></i></div><h3 class="font-anton text-xl tracking-wide">MULTIPLE TRAINING OPTIONS</h3><p class="text-gray-400 text-sm mt-2 leading-relaxed">Weight training, CrossFit, aerobics, cycling, dance fitness & personal training — pick your style.</p><div class="mt-4 text-[12px] font-black tracking-widest text-[#FFD400]">6+ DISCIPLINES →</div></div>
+      <div class="reveal card-premium rounded-3xl p-7 group"><div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] text-black text-2xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-6 transition"><i class="fa-solid fa-location-dot"></i></div><h3 class="font-anton text-xl tracking-wide">CONVENIENT LOCATION</h3><p class="text-gray-400 text-sm mt-2 leading-relaxed">Hardoi Rd, Near Manju Tandon Hospital, Thakurganj — easy to reach from Daulatganj, Balaganj & Sitapur Rd.</p><div class="mt-4 text-[12px] font-black tracking-widest text-[#FFD400]">EASY REACH • PARKING →</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 md:py-28 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <div class="reveal inline-flex items-center gap-2 text-[#FFD400] font-black text-[12px] tracking-[.3em]"><span class="w-10 h-[2px] bg-[#FFD400]"></span> WHAT WE OFFER</div>
+        <h2 class="reveal font-anton text-[36px] md:text-[56px] mt-3 leading-none">OUR FITNESS <span class="text-stroke">SERVICES</span></h2>
+      </div>
+      <p class="reveal text-gray-400 max-w-md text-sm md:text-[15px]">Six specialised programs led by experienced trainers. Tap Learn More for timings & details.</p>
+    </div>
+    <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10"></div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section id="facilities" class="py-20 md:py-24 bg-[#0A0E14] border-y border-white/5 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="text-center">
+      <div class="reveal text-[#FFD400] font-black text-[12px] tracking-[.3em]">— PREMIUM INFRASTRUCTURE —</div>
+      <h2 class="reveal font-anton text-[34px] md:text-[54px] mt-3">TRAIN WITH THE <span class="text-[#FFD400]">RIGHT ENVIRONMENT</span></h2>
+      <p class="reveal text-gray-400 mt-2">Step inside Ultimate Fitness — spacious floors, zoned training areas & pro-grade setup.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5 mt-10">
+      <div class="reveal gallery-item relative rounded-3xl overflow-hidden h-[380px] group cursor-pointer border border-white/10" data-full="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1600&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Strength Zone">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+        <div class="absolute top-4 left-4 bg-[#FFD400] text-black text-[11px] font-black px-3 py-1 rounded-full tracking-widest">STRENGTH ZONE</div>
+        <div class="absolute bottom-0 p-6"><h3 class="font-anton text-2xl">HEAVY DUTY IRON PARADISE</h3><p class="text-gray-300 text-sm mt-1">Dumbbells to 50kg • Squat racks • Benches • Plate-loaded machines</p></div>
+        <div class="overlay absolute inset-0 bg-[#FFD400]/15 backdrop-blur-[1px] flex items-center justify-center"><span class="w-14 h-14 rounded-full bg-[#FFD400] text-black flex items-center justify-center text-xl"><i class="fa-solid fa-expand"></i></span></div>
+      </div>
+      <div class="grid gap-5">
+        <div class="reveal gallery-item relative rounded-3xl overflow-hidden h-[180px] group cursor-pointer border border-white/10" data-full="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=1600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Cardio">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-white text-black text-[11px] font-black px-3 py-1 rounded-full tracking-widest">CARDIO THEATRE</div>
+          <div class="absolute bottom-0 p-5"><h3 class="font-anton text-xl">TREADMILLS • CYCLES • ELLIPTICAL</h3></div>
+          <div class="overlay absolute inset-0 bg-[#FFD400]/15 flex items-center justify-center"><span class="w-12 h-12 rounded-full bg-[#FFD400] text-black flex items-center justify-center"><i class="fa-solid fa-expand"></i></span></div>
+        </div>
+        <div class="reveal gallery-item relative rounded-3xl overflow-hidden h-[180px] group cursor-pointer border border-white/10" data-full="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?q=80&w=1600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Crossfit">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-[#FF2A2A] text-white text-[11px] font-black px-3 py-1 rounded-full tracking-widest">CROSSFIT ARENA</div>
+          <div class="absolute bottom-0 p-5"><h3 class="font-anton text-xl">ROPES • BOXES • KETTLEBELLS</h3></div>
+          <div class="overlay absolute inset-0 bg-[#FFD400]/15 flex items-center justify-center"><span class="w-12 h-12 rounded-full bg-[#FFD400] text-black flex items-center justify-center"><i class="fa-solid fa-expand"></i></span></div>
+        </div>
+      </div>
+      <div class="grid gap-5">
+        <div class="reveal gallery-item relative rounded-3xl overflow-hidden h-[180px] group cursor-pointer border border-white/10" data-full="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Functional">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 bg-black/70 border border-[#FFD400]/40 text-[#FFD400] text-[11px] font-black px-3 py-1 rounded-full tracking-widest">FUNCTIONAL + GROUP</div>
+          <div class="absolute bottom-0 p-5"><h3 class="font-anton text-xl">AEROBICS • DANCE • YOGA</h3></div>
+          <div class="overlay absolute inset-0 bg-[#FFD400]/15 flex items-center justify-center"><span class="w-12 h-12 rounded-full bg-[#FFD400] text-black flex items-center justify-center"><i class="fa-solid fa-expand"></i></span></div>
+        </div>
+        <div class="reveal relative rounded-3xl overflow-hidden h-[180px] bg-gradient-to-br from-[#FFD400] to-[#FF6A00] p-6 flex flex-col justify-between text-black">
+          <div><div class="font-anton text-2xl leading-none">SEE IT<br>IN PERSON.</div><p class="text-[13px] font-semibold mt-1 opacity-80">Free tour + trial workout today</p></div>
+          <div class="flex gap-2"><a href="tel:+919044730631" class="flex-1 bg-black text-white text-center py-3 rounded-xl text-[12px] font-black tracking-widest hover:bg-neutral-900">CALL NOW</a><a href="https://www.google.com/maps/search/?api=1&query=Ultimate+Fitness+Gym+Hardoi+Road+Thakurganj+Lucknow" target="_blank" class="flex-1 bg-white/90 text-center py-3 rounded-xl text-[12px] font-black tracking-widest">DIRECTIONS</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- amenity strip -->
+    <div class="reveal grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 text-center">
+      <div class="bg-white/5 border border-white/10 rounded-2xl py-4 px-2"><i class="fa-solid fa-shower text-[#FFD400] text-xl"></i><div class="text-[12px] font-black tracking-widest mt-2">CHANGING & LOCKER</div></div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl py-4 px-2"><i class="fa-solid fa-bottle-water text-[#FFD400] text-xl"></i><div class="text-[12px] font-black tracking-widest mt-2">RO WATER + PROTEIN BAR</div></div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl py-4 px-2"><i class="fa-solid fa-fan text-[#FFD400] text-xl"></i><div class="text-[12px] font-black tracking-widest mt-2">VENTILATED FLOOR</div></div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl py-4 px-2"><i class="fa-solid fa-square-parking text-[#FFD400] text-xl"></i><div class="text-[12px] font-black tracking-widest mt-2">EASY PARKING</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs" class="py-20 md:py-28 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="text-center">
+      <div class="reveal text-[#FFD400] font-black text-[12px] tracking-[.3em]">— PICK YOUR MISSION —</div>
+      <h2 class="reveal font-anton text-[36px] md:text-[56px] mt-2">CHOOSE YOUR <span class="text-stroke">FITNESS GOAL</span></h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+      <div class="reveal group relative rounded-3xl overflow-hidden h-[440px] border border-white/10 cursor-pointer program-card">
+        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Build Muscle">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+        <div class="absolute top-4 left-4 bg-[#FFD400] text-black font-black text-[11px] px-3 py-1 rounded-full tracking-widest">01</div>
+        <div class="absolute bottom-0 p-6 w-full"><h3 class="font-anton text-3xl">BUILD MUSCLE</h3><p class="text-gray-300 text-[13px] mt-1">Hypertrophy splits, progressive overload & protein diet plan.</p><div class="mt-4 h-[3px] w-12 bg-[#FFD400] group-hover:w-full transition-all duration-500 rounded-full"></div></div>
+      </div>
+      <div class="reveal group relative rounded-3xl overflow-hidden h-[440px] border border-white/10 cursor-pointer program-card">
+        <img src="https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?q=80&w=800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Lose Fat">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+        <div class="absolute top-4 left-4 bg-white text-black font-black text-[11px] px-3 py-1 rounded-full tracking-widest">02</div>
+        <div class="absolute bottom-0 p-6 w-full"><h3 class="font-anton text-3xl">LOSE FAT</h3><p class="text-gray-300 text-[13px] mt-1">HIIT, cardio circuits & calorie-tracked fat-loss nutrition.</p><div class="mt-4 h-[3px] w-12 bg-[#FFD400] group-hover:w-full transition-all duration-500 rounded-full"></div></div>
+      </div>
+      <div class="reveal group relative rounded-3xl overflow-hidden h-[440px] border border-white/10 cursor-pointer program-card">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Build Strength">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+        <div class="absolute top-4 left-4 bg-[#FF2A2A] text-white font-black text-[11px] px-3 py-1 rounded-full tracking-widest">03</div>
+        <div class="absolute bottom-0 p-6 w-full"><h3 class="font-anton text-3xl">BUILD STRENGTH</h3><p class="text-gray-300 text-[13px] mt-1">Powerlifting base — squat, bench, deadlift mastery.</p><div class="mt-4 h-[3px] w-12 bg-[#FFD400] group-hover:w-full transition-all duration-500 rounded-full"></div></div>
+      </div>
+      <div class="reveal group relative rounded-3xl overflow-hidden h-[440px] border border-white/10 cursor-pointer program-card">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Stay Fit">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+        <div class="absolute top-4 left-4 bg-green-500 text-black font-black text-[11px] px-3 py-1 rounded-full tracking-widest">04</div>
+        <div class="absolute bottom-0 p-6 w-full"><h3 class="font-anton text-3xl">STAY FIT</h3><p class="text-gray-300 text-[13px] mt-1">General fitness, flexibility, stamina & active lifestyle.</p><div class="mt-4 h-[3px] w-12 bg-[#FFD400] group-hover:w-full transition-all duration-500 rounded-full"></div></div>
+      </div>
+    </div>
+    <div class="reveal text-center mt-10">
+      <a href="#membership" class="btn-volt inline-flex px-10 py-4 rounded-full text-sm items-center gap-2"><i class="fa-solid fa-rocket"></i> START YOUR JOURNEY <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="mt-3 text-[13px] text-gray-400">First workout <span class="text-white font-bold">FREE</span> • No commitment • Trainer assessment included</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / MOTIVATION -->
+<section id="experience" class="relative py-20 md:py-28 overflow-hidden border-y border-white/5">
+  <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?q=80&w=2000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-30" alt="">
+  <div class="absolute inset-0 bg-gradient-to-b from-[#07090D] via-[#07090D]/70 to-[#07090D]"></div>
+  <div class="relative max-w-6xl mx-auto px-4 md:px-6 text-center">
+    <div class="reveal inline-block bg-[#FFD400]/10 border border-[#FFD400]/30 text-[#FFD400] text-[11px] font-black tracking-[.3em] px-5 py-2 rounded-full">TRAINING EXPERIENCE</div>
+    <h2 class="reveal font-anton text-[34px] md:text-[60px] leading-[1.05] mt-6">YOUR GOAL. YOUR HARD WORK.<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD400] to-[#FF6A00]">YOUR TRANSFORMATION.</span></h2>
+    <p class="reveal text-gray-300 max-w-2xl mx-auto mt-5 leading-relaxed">Every workout is a step forward. At Ultimate Fitness Gym, we aim to create an environment that keeps you motivated to show up, train consistently and keep improving.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+      <div class="reveal card-premium rounded-2xl py-7 px-4"><div class="font-anton text-4xl text-[#FFD400]"><i class="fa-solid fa-bullseye"></i></div><div class="font-anton text-xl mt-3 tracking-wide">DISCIPLINE</div><div class="text-[12px] text-gray-400 mt-1">Show up. No excuses.</div></div>
+      <div class="reveal card-premium rounded-2xl py-7 px-4"><div class="font-anton text-4xl text-[#FFD400]"><i class="fa-solid fa-repeat"></i></div><div class="font-anton text-xl mt-3 tracking-wide">CONSISTENCY</div><div class="text-[12px] text-gray-400 mt-1">Small wins, daily.</div></div>
+      <div class="reveal card-premium rounded-2xl py-7 px-4"><div class="font-anton text-4xl text-[#FFD400]"><i class="fa-solid fa-hand-fist"></i></div><div class="font-anton text-xl mt-3 tracking-wide">STRENGTH</div><div class="text-[12px] text-gray-400 mt-1">Body & mind.</div></div>
+      <div class="reveal card-premium rounded-2xl py-7 px-4"><div class="font-anton text-4xl text-[#FFD400]"><i class="fa-solid fa-crown"></i></div><div class="font-anton text-xl mt-3 tracking-wide">CONFIDENCE</div><div class="text-[12px] text-gray-400 mt-1">Look. Feel. Own it.</div></div>
+    </div>
+    <!-- BMI interactive -->
+    <div class="reveal mt-10 bg-[#0D1117]/90 border border-white/10 rounded-3xl p-6 md:p-8 grid md:grid-cols-2 gap-8 text-left backdrop-blur-xl">
+      <div>
+        <h3 class="font-anton text-2xl md:text-3xl">CHECK YOUR <span class="text-[#FFD400]">BMI IN 10 SEC</span></h3>
+        <p class="text-gray-400 text-sm mt-2">Enter height & weight — get instant category + recommended program at our gym.</p>
+        <div class="grid grid-cols-2 gap-3 mt-5">
+          <div><label class="text-[11px] font-black tracking-widest text-gray-400">HEIGHT (CM)</label><input id="bmiH" type="number" value="170" class="mt-1 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 font-bold"></div>
+          <div><label class="text-[11px] font-black tracking-widest text-gray-400">WEIGHT (KG)</label><input id="bmiW" type="number" value="75" class="mt-1 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 font-bold"></div>
+        </div>
+        <button onclick="calcBMI()" class="btn-volt w-full mt-4 py-3.5 rounded-xl text-sm">CALCULATE BMI <i class="fa-solid fa-calculator ml-1"></i></button>
+      </div>
+      <div class="bg-white/[.04] border border-white/10 rounded-2xl p-6 flex flex-col justify-center items-center text-center">
+        <div class="text-[11px] font-black tracking-[.25em] text-gray-400">YOUR RESULT</div>
+        <div id="bmiVal" class="font-anton text-6xl mt-2 text-[#FFD400]">25.9</div>
+        <div id="bmiCat" class="mt-2 font-black text-sm px-4 py-1.5 rounded-full bg-yellow-500/15 text-yellow-300 border border-yellow-500/30">OVERWEIGHT — FAT LOSS PLAN</div>
+        <div class="w-full bg-white/10 h-2 rounded-full mt-4 overflow-hidden"><div id="bmiBar" class="h-full bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 rounded-full" style="width:55%"></div></div>
+        <a href="tel:+919044730631" class="mt-4 text-[13px] font-bold text-gray-300">Get free diet chart on call <span class="text-[#FFD400]">→ 090447 30631</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section id="trainers" class="py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div><div class="reveal text-[#FFD400] font-black text-[12px] tracking-[.3em] flex items-center gap-2"><span class="w-10 h-[2px] bg-[#FFD400]"></span> EXPERT COACHES</div>
+      <h2 class="reveal font-anton text-[36px] md:text-[56px] mt-2">MEET YOUR <span class="text-[#FFD400]">TRAINERS</span></h2></div>
+      <p class="reveal text-gray-400 max-w-md text-sm">Certified, experienced & obsessed with your form, diet and progress tracking.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+      <div class="reveal card-premium rounded-3xl overflow-hidden group">
+        <div class="relative h-[320px] overflow-hidden"><img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=700&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Trainer"><div class="absolute inset-0 bg-gradient-to-t from-[#11161D] via-transparent to-transparent"></div><div class="absolute top-3 left-3 bg-[#FFD400] text-black text-[10px] font-black px-2.5 py-1 rounded-full">STRENGTH • 8 YRS</div></div>
+        <div class="p-5"><h3 class="font-anton text-xl">COACH ARJUN SINGH</h3><div class="text-[#FFD400] text-[12px] font-bold tracking-widest mt-1">HEAD COACH • POWERLIFTING</div><div class="flex gap-2 mt-3 text-[12px]"><span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Muscle Gain</span><span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Fat Loss</span></div></div>
+      </div>
+      <div class="reveal card-premium rounded-3xl overflow-hidden group">
+        <div class="relative h-[320px] overflow-hidden"><img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=700&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Trainer"><div class="absolute inset-0 bg-gradient-to-t from-[#11161D] via-transparent to-transparent"></div><div class="absolute top-3 left-3 bg-white text-black text-[10px] font-black px-2.5 py-1 rounded-full">AEROBICS • 6 YRS</div></div>
+        <div class="p-5"><h3 class="font-anton text-xl">COACH PRIYA VERMA</h3><div class="text-[#FFD400] text-[12px] font-bold tracking-widest mt-1">AEROBICS • DANCE FITNESS</div><div class="flex gap-2 mt-3 text-[12px]"><span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Zumba</span><span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Weight Loss</span></div></div>
+      </div>
+      <div class="reveal card-premium rounded-3xl overflow-hidden group">
+        <div class="relative h-[320px] overflow-hidden"><img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=700&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Trainer"><div class="absolute inset-0 bg-gradient-to-t from-[#11161D] via-transparent to-transparent"></div><div class="absolute top-3 left-3 bg-[#FF2A2A] text-white text-[10px] font-black px-2.5 py-1 rounded-full">CROSSFIT • 7 YRS</div></div>
+        <div class="p-5"><h3 class="font-anton text-xl">COACH ROHIT YADAV</h3><div class="text-[#FFD400] text-[12px] font-bold tracking-widest mt-1">CROSSFIT • CONDITIONING</div><div class="flex gap-2 mt-3 text-[12px]"><span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">HIIT</span><span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Athletic</span></div></div>
+      </div>
+      <div class="reveal card-premium rounded-3xl overflow-hidden group">
+        <div class="relative h-[320px] overflow-hidden"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=700&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Trainer"><div class="absolute inset-0 bg-gradient-to-t from-[#11161D] via-transparent to-transparent"></div><div class="absolute top-3 left-3 bg-green-500 text-black text-[10px] font-black px-2.5 py-1 rounded-full">PERSONAL • 5 YRS</div></div>
+        <div class="p-5"><h3 class="font-anton text-xl">COACH AMAN KUMAR</h3><div class="text-[#FFD400] text-[12px] font-bold tracking-widest mt-1">CYCLING • CARDIO • DIET</div><div class="flex gap-2 mt-3 text-[12px]"><span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Spin</span><span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Transformation</span></div></div>
+      </div>
+    </div>
+    <!-- Schedule -->
+    <div class="reveal mt-8 bg-[#0D1117] border border-white/10 rounded-3xl p-6 md:p-8 overflow-x-auto">
+      <div class="flex items-center justify-between min-w-[600px] md:min-w-0 mb-5">
+        <h3 class="font-anton text-2xl">WEEKLY <span class="text-[#FFD400]">CLASS TIMETABLE</span></h3>
+        <span class="text-[12px] font-bold text-green-400 bg-green-500/10 border border-green-500/30 px-3 py-1 rounded-full">● LIVE BATCHES</span>
+      </div>
+      <div class="grid grid-cols-7 gap-2 min-w-[720px] md:min-w-0 text-center text-[12px] font-bold">
+        <div class="bg-white/5 rounded-xl p-3 border border-white/10"><div class="text-[#FFD400] font-anton text-sm">MON</div><div class="mt-1">Chest + Aerobics</div><div class="text-gray-500">6-8 AM • 5-8 PM</div></div>
+        <div class="bg-white/5 rounded-xl p-3 border border-white/10"><div class="text-[#FFD400] font-anton text-sm">TUE</div><div class="mt-1">Back + Cycling</div><div class="text-gray-500">6-8 AM • 5-8 PM</div></div>
+        <div class="bg-white/5 rounded-xl p-3 border border-white/10"><div class="text-[#FFD400] font-anton text-sm">WED</div><div class="mt-1">Legs + Dance</div><div class="text-gray-500">6-8 AM • 5-8 PM</div></div>
+        <div class="bg-white/5 rounded-xl p-3 border border-white/10"><div class="text-[#FFD400] font-anton text-sm">THU</div><div class="mt-1">Shoulder + HIIT</div><div class="text-gray-500">6-8 AM • 5-8 PM</div></div>
+        <div class="bg-white/5 rounded-xl p-3 border border-white/10"><div class="text-[#FFD400] font-anton text-sm">FRI</div><div class="mt-1">Arms + CrossFit</div><div class="text-gray-500">6-8 AM • 5-8 PM</div></div>
+        <div class="bg-[#FFD400]/10 rounded-xl p-3 border border-[#FFD400]/30"><div class="text-[#FFD400] font-anton text-sm">SAT</div><div class="mt-1">Full Body + Zumba</div><div class="text-gray-500">7-9 AM • 4-7 PM</div></div>
+        <div class="bg-white/5 rounded-xl p-3 border border-white/10 opacity-60"><div class="font-anton text-sm">SUN</div><div class="mt-1">Rest / Recovery</div><div class="text-gray-500">Yoga 7 AM</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section id="membership" class="py-20 md:py-28 bg-[#0A0E14] border-y border-white/5 relative overflow-hidden">
+  <div class="float-orb w-[400px] h-[400px] bg-[#FF6A00]/20 left-[-120px] bottom-0"></div>
+  <div class="max-w-7xl mx-auto px-4 md:px-6 relative">
+    <div class="text-center">
+      <div class="reveal text-[#FFD400] font-black text-[12px] tracking-[.3em]">— SIMPLE PRICING, SERIOUS RESULTS —</div>
+      <h2 class="reveal font-anton text-[36px] md:text-[56px] mt-2">MEMBERSHIP <span class="text-[#FFD400]">PLANS</span></h2>
+      <div class="reveal inline-flex items-center gap-1 bg-white/5 border border-white/10 rounded-full p-1 mt-6">
+        <button id="btnMonthly" onclick="setBilling('monthly')" class="tab-active px-6 py-2.5 rounded-full text-[12px] font-black tracking-widest transition border border-transparent">MONTHLY</button>
+        <button id="btnYearly" onclick="setBilling('yearly')" class="px-6 py-2.5 rounded-full text-[12px] font-black tracking-widest transition border border-transparent text-gray-400">YEARLY <span class="text-green-400 ml-1">-30%</span></button>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mt-10 items-stretch">
+      <div class="reveal card-premium rounded-3xl p-8 flex flex-col">
+        <div class="text-[12px] font-black tracking-[.25em] text-gray-400">STARTER</div>
+        <div class="mt-3 flex items-end gap-1"><span class="font-anton text-5xl price-val" data-m="1000" data-y="8400">₹1,000</span><span class="text-gray-400 text-sm mb-1 bill-label">/month</span></div>
+        <p class="text-gray-400 text-sm mt-2">Perfect to kickstart your fitness habit.</p>
+        <ul class="mt-6 space-y-3 text-sm flex-1">
+          <li><i class="fa-solid fa-check tick mr-2"></i> Full gym floor access</li>
+          <li><i class="fa-solid fa-check tick mr-2"></i> Cardio + strength zones</li>
+          <li><i class="fa-solid fa-check tick mr-2"></i> Group warm-up sessions</li>
+          <li><i class="fa-solid fa-check tick mr-2"></i> Locker facility</li>
+          <li class="text-gray-500"><i class="fa-solid fa-xmark mr-2"></i> Diet chart & PT</li>
+        </ul>
+        <a href="tel:+919044730631" class="mt-7 btn-ghost text-center py-3.5 rounded-xl text-[13px] font-black tracking-widest">CHOOSE STARTER</a>
+      </div>
+      <div class="reveal relative rounded-3xl p-[2px] bg-gradient-to-b from-[#FFD400] to-[#FF6A00] md:-mt-4 md:mb-[-1rem] shadow-[0_25px_70px_-20px_rgba(255,180,0,.5)]">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-[#FFD400] text-[11px] font-black tracking-[.2em] px-5 py-1.5 rounded-full border border-[#FFD400] whitespace-nowrap">⭐ MOST POPULAR</div>
+        <div class="bg-[#11161D] rounded-3xl p-8 h-full flex flex-col">
+          <div class="text-[12px] font-black tracking-[.25em] text-[#FFD400]">TRANSFORMER • 3 MONTHS</div>
+          <div class="mt-3 flex items-end gap-1"><span class="font-anton text-5xl text-[#FFD400] price-val" data-m="2500" data-y="21000">₹2,500</span><span class="text-gray-400 text-sm mb-1 bill-label">/quarter</span></div>
+          <p class="text-gray-400 text-sm mt-2">Best value for visible transformation.</p>
+          <ul class="mt-6 space-y-3 text-sm flex-1">
+            <li><i class="fa-solid fa-check tick mr-2"></i> Everything in Starter</li>
+            <li><i class="fa-solid fa-check tick mr-2"></i> Personalised diet chart</li>
+            <li><i class="fa-solid fa-check tick mr-2"></i> Aerobics + CrossFit + Cycling</li>
+            <li><i class="fa-solid fa-check tick mr-2"></i> Monthly body measurement</li>
+            <li><i class="fa-solid fa-check tick mr-2"></i> Trainer support on floor</li>
+          </ul>
+          <a href="tel:+919044730631" class="mt-7 btn-volt text-center py-4 rounded-xl text-[13px]">JOIN NOW — SAVE ₹500 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+          <div class="text-center text-[12px] text-gray-400 mt-2">EMI available • Pause option</div>
+        </div>
+      </div>
+      <div class="reveal card-premium rounded-3xl p-8 flex flex-col">
+        <div class="text-[12px] font-black tracking-[.25em] text-gray-400">ULTIMATE • 12 MONTHS</div>
+        <div class="mt-3 flex items-end gap-1"><span class="font-anton text-5xl price-val" data-m="8000" data-y="67200">₹8,000</span><span class="text-gray-400 text-sm mb-1 bill-label">/year</span></div>
+        <p class="text-gray-400 text-sm mt-2">For committed, year-long change.</p>
+        <ul class="mt-6 space-y-3 text-sm flex-1">
+          <li><i class="fa-solid fa-check tick mr-2"></i> Everything in Transformer</li>
+          <li><i class="fa-solid fa-check tick mr-2"></i> 2 Personal training sessions</li>
+          <li><i class="fa-solid fa-check tick mr-2"></i> Advanced transformation plan</li>
+          <li><i class="fa-solid fa-check tick mr-2"></i> Guest pass + T-shirt</li>
+          <li><i class="fa-solid fa-check tick mr-2"></i> Priority trainer access</li>
+        </ul>
+        <a href="tel:+919044730631" class="mt-7 btn-ghost text-center py-3.5 rounded-xl text-[13px] font-black tracking-widest">CHOOSE ULTIMATE</a>
+      </div>
+    </div>
+    <div class="reveal mt-8 bg-gradient-to-r from-[#FFD400] to-[#FF8A00] rounded-2xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 text-black">
+      <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-black text-[#FFD400] flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-gift"></i></div><div><div class="font-anton text-xl leading-none">LIMITED OFFER: FLAT ₹1000 OFF + FREE TRIAL</div><div class="text-[13px] font-semibold opacity-80">Show this website at reception • Valid this month only in Thakurganj branch</div></div></div>
+      <a href="tel:+919044730631" class="bg-black text-white px-8 py-3.5 rounded-full text-[13px] font-black tracking-widest whitespace-nowrap hover:scale-105 transition">CLAIM ON CALL →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="text-center">
+      <div class="reveal text-[#FFD400] font-black text-[12px] tracking-[.3em]">— INSIDE ULTIMATE —</div>
+      <h2 class="reveal font-anton text-[36px] md:text-[56px] mt-2">PREMIUM <span class="text-stroke">GALLERY</span></h2>
+      <div class="reveal flex flex-wrap justify-center gap-2 mt-6">
+        <button onclick="filterGallery('all',this)" class="gfilter tab-active px-5 py-2.5 rounded-full text-[12px] font-black tracking-widest border border-white/15 bg-white/5">ALL</button>
+        <button onclick="filterGallery('interior',this)" class="gfilter px-5 py-2.5 rounded-full text-[12px] font-black tracking-widest border border-white/15 bg-white/5 text-gray-300">GYM INTERIOR</button>
+        <button onclick="filterGallery('equipment',this)" class="gfilter px-5 py-2.5 rounded-full text-[12px] font-black tracking-widest border border-white/15 bg-white/5 text-gray-300">EQUIPMENT</button>
+        <button onclick="filterGallery('workout',this)" class="gfilter px-5 py-2.5 rounded-full text-[12px] font-black tracking-widest border border-white/15 bg-white/5 text-gray-300">WORKOUT</button>
+        <button onclick="filterGallery('training',this)" class="gfilter px-5 py-2.5 rounded-full text-[12px] font-black tracking-widest border border-white/15 bg-white/5 text-gray-300">TRAINING</button>
+      </div>
+    </div>
+    <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 mt-8"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-20 md:py-24 bg-[#0A0E14] border-y border-white/5 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="grid lg:grid-cols-[340px_1fr] gap-8 items-start">
+      <div class="reveal bg-[#11161D] border border-white/10 rounded-3xl p-8 text-center lg:sticky lg:top-24">
+        <div class="text-[12px] font-black tracking-[.3em] text-[#FFD400]">WHAT PEOPLE SAY</div>
+        <div class="font-anton text-7xl mt-3">4.8</div>
+        <div class="text-[#FFD400] text-lg mt-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <div class="font-bold text-sm mt-2">505 Google Reviews</div>
+        <div class="text-[12px] text-gray-400 mt-1 flex items-center justify-center gap-1"><span class="w-5 h-5 rounded-full bg-white text-blue-600 font-black flex items-center justify-center text-[12px]">G</span> Verified Google Rating</div>
+        <div class="w-full bg-white/10 h-2 rounded-full mt-5 overflow-hidden text-left"><div class="h-full bg-[#FFD400] rounded-full" style="width:96%"></div></div>
+        <div class="text-[12px] text-gray-400 mt-1 font-semibold">96% members recommend us</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Ultimate+Fitness+Gym+Thakurganj+Lucknow+reviews" target="_blank" class="btn-volt w-full mt-5 py-3.5 rounded-xl text-[13px] flex items-center justify-center gap-2"><i class="fa-brands fa-google"></i> REVIEW US ON GOOGLE</a>
+        <div class="flex justify-center gap-2 mt-5">
+          <button onclick="moveReviews(-1)" class="w-11 h-11 rounded-full border border-white/15 bg-white/5 hover:bg-[#FFD400] hover:text-black transition"><i class="fa-solid fa-arrow-left"></i></button>
+          <button onclick="moveReviews(1)" class="w-11 h-11 rounded-full border border-white/15 bg-white/5 hover:bg-[#FFD400] hover:text-black transition"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="overflow-hidden">
+        <div id="reviewTrack" class="review-track"></div>
+        <div class="flex gap-2 mt-5 justify-center" id="reviewDots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 md:py-28 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="text-center"><div class="reveal text-[#FFD400] font-black text-[12px] tracking-[.3em]">— VISIT • CALL • JOIN —</div>
+    <h2 class="reveal font-anton text-[36px] md:text-[56px] mt-2">GET IN <span class="text-[#FFD400]">TOUCH</span></h2></div>
+    <div class="grid lg:grid-cols-2 gap-6 mt-10">
+      <div class="space-y-4">
+        <div class="reveal card-premium rounded-3xl p-6 flex gap-4">
+          <div class="w-12 h-12 rounded-xl price-pop flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-location-dot"></i></div>
+          <div><div class="font-anton text-lg tracking-wide">GYM ADDRESS</div><p class="text-gray-300 text-sm mt-1 leading-relaxed">Hardoi Rd, Near Manju Tandon Hospital,<br>Thakurganj, Daulatganj, Lucknow,<br>Uttar Pradesh – 226003</p><a href="https://www.google.com/maps/search/?api=1&query=Ultimate+Fitness+Gym+Hardoi+Road+Thakurganj+Lucknow" target="_blank" class="inline-flex items-center gap-1 text-[#FFD400] text-[13px] font-black tracking-widest mt-2">OPEN IN GOOGLE MAPS <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i></a></div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <a href="tel:+919044730631" class="reveal card-premium rounded-3xl p-6 block hover:border-[#FFD400]/50"><div class="w-12 h-12 rounded-xl bg-green-500/15 border border-green-500/30 text-green-400 flex items-center justify-center text-lg"><i class="fa-solid fa-phone"></i></div><div class="font-anton text-lg mt-3">090447 30631</div><div class="text-[12px] text-gray-400 font-bold">TAP TO CALL NOW</div></a>
+          <div class="reveal card-premium rounded-3xl p-6"><div class="w-12 h-12 rounded-xl bg-[#FFD400]/15 border border-[#FFD400]/30 text-[#FFD400] flex items-center justify-center text-lg"><i class="fa-solid fa-clock"></i></div><div class="font-anton text-lg mt-3" id="openStatusCard">OPEN • TILL 10 PM</div><div class="text-[12px] text-gray-400 font-bold">MON–SAT: 5AM–10PM • SUN: 7–10AM</div></div>
+        </div>
+        <div class="reveal rounded-3xl overflow-hidden border border-white/10 h-[280px] relative">
+          <iframe title="Ultimate Fitness Gym Map" src="https://www.google.com/maps?q=Hardoi%20Road%20Near%20Manju%20Tandon%20Hospital%20Thakurganj%20Lucknow%20226003&output=embed" class="w-full h-full grayscale invert-[.92] contrast-[.9]" loading="lazy" style="border:0"></iframe>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ultimate+Fitness+Gym+Hardoi+Road+Thakurganj+Lucknow" target="_blank" class="absolute bottom-4 left-4 right-4 sm:right-auto bg-black/85 backdrop-blur border border-[#FFD400]/40 rounded-xl px-5 py-3 text-[13px] font-black tracking-widest flex items-center gap-2 hover:bg-black"><i class="fa-solid fa-diamond-turn-right text-[#FFD400]"></i> GET DIRECTIONS</a>
+        </div>
+      </div>
+      <div class="reveal bg-[#11161D] border border-white/10 rounded-3xl p-6 md:p-8 relative overflow-hidden">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FFD400] to-[#FF6A00]"></div>
+        <h3 class="font-anton text-2xl md:text-3xl">BOOK YOUR <span class="text-[#FFD400]">FREE TRIAL</span></h3>
+        <p class="text-gray-400 text-sm mt-1">Fill in 20 seconds — our team will call you back within 2 hours.</p>
+        <form id="leadForm" class="mt-6 space-y-3" onsubmit="return submitLead(event)">
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div><label class="text-[11px] font-black tracking-widest text-gray-400">FULL NAME *</label><input id="fName" required placeholder="e.g. Rahul Sharma" class="mt-1 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3.5 text-sm font-semibold placeholder:text-gray-600"></div>
+            <div><label class="text-[11px] font-black tracking-widest text-gray-400">PHONE *</label><input id="fPhone" required pattern="[0-9+ ]{10,15}" placeholder="e.g. 98765 43210" class="mt-1 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3.5 text-sm font-semibold placeholder:text-gray-600"></div>
+          </div>
+          <div><label class="text-[11px] font-black tracking-widest text-gray-400">YOUR GOAL</label><select id="fGoal" class="mt-1 w-full bg-[#161C25] border border-white/15 rounded-xl px-4 py-3.5 text-sm font-semibold"><option>Build Muscle</option><option>Lose Fat / Weight Loss</option><option>Build Strength</option><option>Stay Fit / General Fitness</option><option>Aerobics / Dance / Zumba</option><option>Personal Training</option></select></div>
+          <div><label class="text-[11px] font-black tracking-widest text-gray-400">MESSAGE (OPTIONAL)</label><textarea id="fMsg" rows="3" placeholder="Preferred timing? Morning / Evening..." class="mt-1 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3.5 text-sm font-semibold placeholder:text-gray-600 resize-none"></textarea></div>
+          <button type="submit" class="btn-volt w-full py-4 rounded-xl text-sm">SUBMIT & CLAIM FREE TRIAL <i class="fa-solid fa-paper-plane ml-1"></i></button>
+          <div class="flex items-center justify-center gap-2 text-[12px] text-gray-500 font-semibold"><i class="fa-solid fa-lock text-green-500"></i> Your details are safe. No spam, only 1 callback.</div>
+        </form>
+        <!-- FAQ mini -->
+        <div class="mt-6 space-y-2" id="faqWrap">
+          <div class="faq bg-white/5 border border-white/10 rounded-xl overflow-hidden"><button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-4 py-3.5 text-[13px] font-bold text-left">What are the gym timings? <span class="faq-icon w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition shrink-0 ml-2"><i class="fa-solid fa-plus text-xs"></i></span></button><div class="faq-a px-4"><p class="pb-4 text-[13px] text-gray-400">Mon–Sat: 5 AM to 10 PM. Sunday: light / yoga batch 7–10 AM. We close at 10 PM sharp.</p></div></div>
+          <div class="faq bg-white/5 border border-white/10 rounded-xl overflow-hidden"><button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-4 py-3.5 text-[13px] font-bold text-left">Is there a trainer for beginners? <span class="faq-icon w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition shrink-0 ml-2"><i class="fa-solid fa-plus text-xs"></i></span></button><div class="faq-a px-4"><p class="pb-4 text-[13px] text-gray-400">Yes! Every beginner gets form guidance, a starter split and diet basics. Trainers are always on floor.</p></div></div>
+          <div class="faq bg-white/5 border border-white/10 rounded-xl overflow-hidden"><button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-4 py-3.5 text-[13px] font-bold text-left">Do you offer diet plans? <span class="faq-icon w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition shrink-0 ml-2"><i class="fa-solid fa-plus text-xs"></i></span></button><div class="faq-a px-4"><p class="pb-4 text-[13px] text-gray-400">Yes, veg / non-veg budget-friendly Indian diet charts are included in Transformer & Ultimate plans.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="relative py-16 md:py-20 overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=1800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="">
+  <div class="absolute inset-0 bg-black/80"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-[#FFD400]/20 to-transparent"></div>
+  <div class="relative max-w-4xl mx-auto px-4 text-center">
+    <h2 class="reveal font-anton text-[36px] md:text-[64px] leading-[1.02]">STOP WAITING.<br><span class="text-[#FFD400]">START LIFTING TODAY.</span></h2>
+    <p class="reveal text-gray-300 mt-4">First trial is FREE. One call can change your body & confidence.</p>
+    <div class="reveal flex flex-col sm:flex-row justify-center gap-3 mt-7">
+      <a href="tel:+919044730631" class="btn-volt px-9 py-4 rounded-full text-sm"><i class="fa-solid fa-phone mr-2"></i> CALL 090447 30631</a>
+      <a href="https://wa.me/919044730631?text=Hi%20Ultimate%20Fitness%20Gym!%20I%20want%20to%20book%20a%20FREE%20trial%20workout." target="_blank" class="btn-ghost px-9 py-4 rounded-full text-sm font-black tracking-widest !bg-green-500/15 !border-green-500/40 text-green-300 hover:!border-green-400"><i class="fa-brands fa-whatsapp mr-2 text-lg"></i> WHATSAPP US</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#05070A] border-t border-white/10 pt-14 pb-28 md:pb-8">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 grid md:grid-cols-4 gap-8">
+    <div>
+      <div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] flex items-center justify-center text-black text-xl"><i class="fa-solid fa-dumbbell"></i></div><div><div class="font-anton text-lg">ULTIMATE <span class="text-[#FFD400]">FITNESS</span></div><div class="text-[10px] tracking-[.3em] text-gray-500 font-bold">GYM • LUCKNOW</div></div></div>
+      <p class="text-gray-400 text-[13px] mt-4 leading-relaxed">Professional fitness gym in Thakurganj, Lucknow. Strength, cardio, CrossFit, aerobics & dance fitness under expert guidance.</p>
+      <div class="flex items-center gap-1 text-[#FFD400] text-sm mt-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span class="text-gray-400 text-[12px] ml-1 font-bold">4.8 • 505 reviews</span></div>
+    </div>
+    <div><div class="font-anton tracking-wide text-lg">QUICK LINKS</div><div class="w-10 h-[3px] bg-[#FFD400] mt-2 rounded-full"></div><div class="grid grid-cols-2 md:grid-cols-1 gap-2 mt-4 text-[13px] text-gray-400 font-semibold"><a href="#about" class="hover:text-[#FFD400]">About Us</a><a href="#services" class="hover:text-[#FFD400]">Services</a><a href="#facilities" class="hover:text-[#FFD400]">Facilities</a><a href="#membership" class="hover:text-[#FFD400]">Membership</a><a href="#gallery" class="hover:text-[#FFD400]">Gallery</a><a href="#reviews" class="hover:text-[#FFD400]">Reviews</a></div></div>
+    <div><div class="font-anton tracking-wide text-lg">CONTACT</div><div class="w-10 h-[3px] bg-[#FFD400] mt-2 rounded-full"></div><div class="mt-4 space-y-3 text-[13px] text-gray-400"><a href="tel:+919044730631" class="flex gap-2 hover:text-white"><i class="fa-solid fa-phone text-[#FFD400] mt-1"></i> 090447 30631</a><div class="flex gap-2"><i class="fa-solid fa-location-dot text-[#FFD400] mt-1"></i> Hardoi Rd, Near Manju Tandon Hospital, Thakurganj, Lucknow 226003</div><div class="flex gap-2"><i class="fa-solid fa-clock text-[#FFD400] mt-1"></i> Open • Closes 10:00 PM (Mon–Sat)</div></div></div>
+    <div><div class="font-anton tracking-wide text-lg">JOIN THE FAMILY</div><div class="w-10 h-[3px] bg-[#FFD400] mt-2 rounded-full"></div><p class="text-[13px] text-gray-400 mt-4">Get workout tips & offers on WhatsApp.</p><form onsubmit="return subscribe(event)" class="mt-3 flex gap-2"><input id="subPhone" required placeholder="Your mobile number" class="flex-1 min-w-0 bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm font-semibold"><button class="btn-volt px-4 rounded-xl"><i class="fa-solid fa-arrow-right"></i></button></form><div class="flex gap-2 mt-4"><a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FFD400] hover:text-black transition"><i class="fa-brands fa-instagram"></i></a><a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FFD400] hover:text-black transition"><i class="fa-brands fa-facebook-f"></i></a><a href="https://wa.me/919044730631" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FFD400] hover:text-black transition"><i class="fa-brands fa-whatsapp"></i></a><a href="tel:+919044730631" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FFD400] hover:text-black transition"><i class="fa-solid fa-phone"></i></a></div></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 md:px-6 mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-2 text-[12px] text-gray-500 font-semibold">
+    <div>© 2026 Ultimate Fitness Gym, Thakurganj Lucknow. All rights reserved.</div>
+    <div>Train Hard • Stay Strong • Become Better 💛</div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<a href="https://wa.me/919044730631?text=Hi!%20I%20want%20gym%20details%20and%20FREE%20trial." target="_blank" class="fixed bottom-[84px] md:bottom-6 right-4 md:right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] text-white text-2xl flex items-center justify-center shadow-[0_12px_30px_-6px_rgba(37,211,102,.6)] hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="toTop" class="fixed bottom-[84px] md:bottom-24 right-4 md:right-[26px] z-40 w-11 h-11 rounded-full bg-white/10 border border-white/20 backdrop-blur text-white hidden items-center justify-center hover:bg-[#FFD400] hover:text-black transition"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- MOBILE BOTTOM BAR -->
+<div class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-[#0A0E14]/95 backdrop-blur-xl border-t border-white/10 px-3 py-2.5 grid grid-cols-3 gap-2">
+  <a href="tel:+919044730631" class="bg-gradient-to-r from-[#FFD400] to-[#FF8A00] text-black rounded-xl py-3 text-[12px] font-black tracking-widest flex items-center justify-center gap-1.5"><i class="fa-solid fa-phone"></i> CALL NOW</a>
+  <a href="#membership" class="bg-white text-black rounded-xl py-3 text-[12px] font-black tracking-widest flex items-center justify-center gap-1.5"><i class="fa-solid fa-bolt"></i> JOIN NOW</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=Ultimate+Fitness+Gym+Hardoi+Road+Thakurganj+Lucknow" target="_blank" class="bg-white/10 border border-white/15 text-white rounded-xl py-3 text-[12px] font-black tracking-widest flex items-center justify-center gap-1.5"><i class="fa-solid fa-location-dot text-[#FFD400]"></i> VISIT</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 z-[90] bg-black/95 backdrop-blur-xl hidden items-center justify-center p-4">
+  <button onclick="closeLightbox()" class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-[#FFD400] hover:text-black transition"><i class="fa-solid fa-xmark text-xl"></i></button>
+  <button onclick="stepLightbox(-1)" class="absolute left-3 md:left-8 w-11 h-11 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-[#FFD400] hover:text-black transition"><i class="fa-solid fa-chevron-left"></i></button>
+  <button onclick="stepLightbox(1)" class="absolute right-3 md:right-8 w-11 h-11 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-[#FFD400] hover:text-black transition"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="max-w-4xl w-full"><img id="lbImg" src="" class="w-full max-h-[78vh] object-contain rounded-2xl border border-white/15" alt="Gallery"><div id="lbCap" class="text-center mt-4 font-anton tracking-wide text-lg text-[#FFD400]"></div></div>
+</div>
+
+<!-- SERVICE MODAL -->
+<div id="serviceModal" class="fixed inset-0 z-[90] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+  <div class="max-w-lg w-full bg-[#11161D] border border-white/12 rounded-3xl overflow-hidden relative">
+    <div class="h-2 bg-gradient-to-r from-[#FFD400] to-[#FF6A00]"></div>
+    <button onclick="closeService()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFD400] hover:text-black"><i class="fa-solid fa-xmark"></i></button>
+    <div class="p-7">
+      <div id="smIcon" class="w-14 h-14 rounded-2xl price-pop flex items-center justify-center text-2xl mb-4"></div>
+      <h3 id="smTitle" class="font-anton text-3xl"></h3>
+      <div id="smTime" class="text-[#FFD400] text-[12px] font-black tracking-widest mt-1"></div>
+      <p id="smDesc" class="text-gray-300 text-sm mt-3 leading-relaxed"></p>
+      <ul id="smPoints" class="mt-4 space-y-2 text-[13px]"></ul>
+      <div class="grid grid-cols-2 gap-2 mt-6"><a href="tel:+919044730631" class="btn-volt text-center py-3 rounded-xl text-[12px]">BOOK FREE CLASS</a><button onclick="closeService()" class="btn-ghost rounded-xl py-3 text-[12px] font-black tracking-widest">CLOSE</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="fixed top-20 left-1/2 -translate-x-1/2 z-[95] bg-[#11161D] border border-[#FFD400]/40 rounded-2xl px-5 py-4 shadow-2xl hidden items-center gap-3 max-w-[92vw]">
+  <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white shrink-0"><i class="fa-solid fa-check"></i></div>
+  <div><div id="toastTitle" class="font-black text-sm">Success!</div><div id="toastMsg" class="text-[13px] text-gray-400">Done.</div></div>
+</div>
+
+<script>
+/* ---------- PRELOADER ---------- */
+window.addEventListener('load', ()=> setTimeout(()=> document.getElementById('preloader').classList.add('hide'), 1400));
+setTimeout(()=> document.getElementById('preloader').classList.add('hide'), 3500);
+
+/* ---------- NAV / MOBILE ---------- */
+const hb = document.getElementById('hamburger'), mm = document.getElementById('mobileMenu');
+let menuOpen=false;
+function toggleMenu(force){
+  menuOpen = force!==undefined?force:!menuOpen;
+  mm.style.maxHeight = menuOpen? mm.scrollHeight+'px':'0px';
+  document.getElementById('hb1').style.transform = menuOpen?'rotate(45deg) translate(5px,5px)':'';
+  document.getElementById('hb2').style.opacity = menuOpen?'0':'1';
+  document.getElementById('hb3').style.transform = menuOpen?'rotate(-45deg) translate(5px,-5px)':'';
+}
+hb.addEventListener('click',()=>toggleMenu());
+document.querySelectorAll('.mob-link').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
+
+/* active nav on scroll */
+const sections=[...document.querySelectorAll('section[id]')];
+window.addEventListener('scroll',()=>{
+  document.getElementById('toTop').style.display = window.scrollY>600?'flex':'none';
+  let cur='home';
+  sections.forEach(s=>{ if(window.scrollY>=s.offsetTop-120) cur=s.id; });
+  document.querySelectorAll('.nav-link').forEach(l=>l.classList.toggle('active', l.getAttribute('href')==='#'+cur));
+},{passive:true});
+
+/* ---------- OPEN STATUS ---------- */
+(function(){
+  const h=new Date().getHours();
+  const open = h>=5 && h<22;
+  const t1=document.getElementById('openStatusTop'), t2=document.getElementById('openStatusCard');
+  if(!open){ if(t1) t1.textContent='CLOSED • OPENS 5 AM'; if(t2) t2.textContent='CLOSED • OPENS 5 AM'; }
+})();
+
+/* ---------- REVEAL ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target);} }),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- COUNTERS ---------- */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return; cio.unobserve(e.target);
+  const el=e.target, target=+el.dataset.target; let c=0; const step=Math.max(1,Math.ceil(target/60));
+  const t=setInterval(()=>{ c+=step; if(c>=target){c=target;clearInterval(t);} el.textContent=c; },30);
+}),{threshold:.5});
+document.querySelectorAll('.counter').forEach(el=>cio.observe(el));
+
+/* ---------- SERVICES ---------- */
+const services=[
+ {icon:'fa-person-half-dress', title:'AEROBICS TRAINER', short:'High-energy fat-burn batches for weight loss, stamina & full-body toning.', time:'MON–SAT • 7–8 AM & 6–7 PM', desc:'Fun, music-driven group workouts that melt fat fast. Perfect for beginners, homemakers & anyone who hates boring cardio.', points:['Fat-loss focused routines','Improved stamina & flexibility','Group energy & personal correction','Ideal for all age groups']},
+ {icon:'fa-fire-flame-curved', title:'CROSSFIT WORKOUT', short:'Functional HIIT, ropes, boxes & kettlebells for athletic power.', time:'MON–FRI • 7 AM & 6 PM', desc:'Forge elite fitness with constantly varied functional movements — build engine, strength and mental toughness.', points:['WODs scaled to your level','Battle ropes, sled, box jumps','Core + conditioning focus','Coach-supervised safety']},
+ {icon:'fa-bicycle', title:'CYCLING TRAINING', short:'Indoor spin batches that torch calories & strengthen legs.', time:'DAILY • 6 AM & 7 PM', desc:'Rhythmic indoor cycling with intervals — low impact on joints, huge impact on fat loss and heart health.', points:['500+ calories per session','Knee-friendly cardio','Music-led spin batches','Legs + glutes shaping']},
+ {icon:'fa-music', title:'DANCE FITNESS', short:'Zumba-style dance workouts — fitness that feels like a party.', time:'TUE • THU • SAT • 5–6 PM', desc:'Burn up to 600 calories while dancing to Bollywood & international beats. No dance experience needed!', points:['Zumba + Bollywood fitness','Stress-busting sessions','Tone arms, belly & hips','Beginner friendly batches']},
+ {icon:'fa-dumbbell', title:'STRENGTH TRAINING', short:'Scientific muscle-building with machines, rods & dumbbells.', time:'MON–SAT • 5 AM–10 PM', desc:'Our core speciality. Structured splits, progressive overload & form-first coaching for muscle & strength.', points:['Chest / Back / Legs splits','Personal form correction','Bulking + cutting plans','Powerlifting guidance']},
+ {icon:'fa-heart-pulse', title:'CARDIO FITNESS', short:'Treadmills, ellipticals & circuits for heart health & fat burn.', time:'ALL DAYS • FULL HOURS', desc:'Build stamina, control BP & sugar, and accelerate fat loss with smart cardio programming.', points:['Modern cardio consoles','HIIT + steady-state mix','Weight-loss tracking','Heart-health focused']},
+];
+const sg=document.getElementById('servicesGrid');
+sg.innerHTML=services.map((s,i)=>`
+ <div class="reveal card-premium rounded-3xl p-7 flex flex-col group visible" style="transition-delay:${i*60}ms">
+   <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FFD400] to-[#FF6A00] text-black text-2xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:-rotate-6 transition"><i class="fa-solid ${s.icon}"></i></div>
+   <h3 class="font-anton text-xl tracking-wide">${s.title}</h3>
+   <p class="text-gray-400 text-[13.5px] mt-2 leading-relaxed flex-1">${s.short}</p>
+   <div class="text-[11px] font-black tracking-widest text-green-400 mt-3"><i class="fa-solid fa-clock mr-1"></i> ${s.time}</div>
+   <button onclick="openService(${i})" class="mt-5 w-full border border-[#FFD400]/40 text-[#FFD400] hover:bg-[#FFD400] hover:text-black transition font-black tracking-[.15em] text-[12px] py-3 rounded-xl">LEARN MORE →</button>
+ </div>`).join('');
+document.querySelectorAll('#servicesGrid .reveal').forEach(el=>io.observe(el));
+function openService(i){
+  const s=services[i];
+  document.getElementById('smIcon').innerHTML=`<i class="fa-solid ${s.icon}"></i>`;
+  document.getElementById('smTitle').textContent=s.title;
+  document.getElementById('smTime').textContent=s.time;
+  document.getElementById('smDesc').textContent=s.desc;
+  document.getElementById('smPoints').innerHTML=s.points.map(p=>`<li class="flex gap-2"><i class="fa-solid fa-circle-check text-[#FFD400] mt-1"></i> ${p}</li>`).join('');
+  const m=document.getElementById('serviceModal'); m.classList.remove('hidden'); m.classList.add('flex'); document.body.classList.add('lightbox-open');
+}
+function closeService(){ const m=document.getElementById('serviceModal'); m.classList.add('hidden'); m.classList.remove('flex'); document.body.classList.remove('lightbox-open'); }
+
+/* ---------- GALLERY ---------- */
+const gallery=[
+ {cat:'interior', src:'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop', cap:'MAIN GYM FLOOR'},
+ {cat:'equipment', src:'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop', cap:'DUMBBELL RACK ZONE'},
+ {cat:'workout', src:'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop', cap:'DUMBBELL WORKOUT'},
+ {cat:'training', src:'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop', cap:'PERSONAL TRAINING'},
+ {cat:'equipment', src:'https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=800&auto=format&fit=crop', cap:'STRENGTH MACHINES'},
+ {cat:'workout', src:'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=800&auto=format&fit=crop', cap:'BARBELL POWER'},
+ {cat:'training', src:'https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=800&auto=format&fit=crop', cap:'COACH GUIDANCE'},
+ {cat:'interior', src:'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?q=80&w=800&auto=format&fit=crop', cap:'CROSSFIT ARENA'},
+ {cat:'workout', src:'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop', cap:'STRENGTH SESSION'},
+ {cat:'training', src:'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop', cap:'LADIES FITNESS BATCH'},
+ {cat:'equipment', src:'https://images.unsplash.com/photo-1549060279-7e168fcee0c2?q=80&w=800&auto=format&fit=crop', cap:'FREE WEIGHTS'},
+ {cat:'workout', src:'https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800&auto=format&fit=crop', cap:'DEADLIFT ZONE'},
+];
+const gg=document.getElementById('galleryGrid');
+function renderGallery(filter='all'){
+  const list=gallery.map((g,i)=>({...g,idx:i})).filter(g=>filter==='all'||g.cat===filter);
+  gg.innerHTML=list.map(g=>`
+   <div class="gallery-item relative rounded-2xl overflow-hidden ${g.idx%5===0?'col-span-2 row-span-2 h-[260px] md:h-[380px]':'h-[180px] md:h-[190px]'} border border-white/10 cursor-pointer group" onclick="openLightbox(${g.idx})">
+     <img src="${g.src}" loading="lazy" class="w-full h-full object-cover" alt="${g.cap}">
+     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
+     <div class="absolute bottom-0 p-3 md:p-4 w-full flex items-end justify-between gap-2">
+       <div class="font-anton text-[13px] md:text-[15px] tracking-wide">${g.cap}</div>
+       <span class="w-8 h-8 rounded-full bg-[#FFD400] text-black flex items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition shrink-0"><i class="fa-solid fa-expand"></i></span>
+     </div>
+     <div class="absolute top-2 left-2 text-[9px] font-black tracking-widest bg-black/70 backdrop-blur px-2 py-1 rounded-full border border-white/20 uppercase">${g.cat}</div>
+   </div>`).join('');
+}
+renderGallery();
+function filterGallery(cat,btn){
+  document.querySelectorAll('.gfilter').forEach(b=>{b.classList.remove('tab-active'); b.classList.add('text-gray-300');});
+  btn.classList.add('tab-active'); btn.classList.remove('text-gray-300');
+  renderGallery(cat);
+}
+let lbIndex=0;
+function openLightbox(i){ lbIndex=i; updateLb(); const l=document.getElementById('lightbox'); l.classList.remove('hidden'); l.classList.add('flex'); document.body.classList.add('lightbox-open'); }
+function updateLb(){ document.getElementById('lbImg').src=gallery[lbIndex].src.replace('w=800','w=1400'); document.getElementById('lbCap').textContent=(lbIndex+1)+' / '+gallery.length+' — '+gallery[lbIndex].cap; }
+function stepLightbox(d){ lbIndex=(lbIndex+d+gallery.length)%gallery.length; updateLb(); }
+function closeLightbox(){ const l=document.getElementById('lightbox'); l.classList.add('hidden'); l.classList.remove('flex'); document.body.classList.remove('lightbox-open'); }
+document.getElementById('lightbox').addEventListener('click',e=>{ if(e.target.id==='lightbox') closeLightbox(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){closeLightbox();closeService();} if(!document.getElementById('lightbox').classList.contains('hidden')){ if(e.key==='ArrowRight')stepLightbox(1); if(e.key==='ArrowLeft')stepLightbox(-1);} });
+document.querySelectorAll('.gallery-item[data-full]').forEach(el=>el.addEventListener('click',()=>{
+  document.getElementById('lbImg').src=el.dataset.full; document.getElementById('lbCap').textContent='ULTIMATE FITNESS — FACILITY VIEW';
+  const l=document.getElementById('lightbox'); l.classList.remove('hidden'); l.classList.add('flex'); document.body.classList.add('lightbox-open');
+}));
+
+/* ---------- REVIEWS ---------- */
+const reviews=[
+ {n:'Amit Kumar Singh', t:'2 weeks ago', s:'Recently joined Ultimate Fitness Gym and the experience is amazing. Trainers actually correct your form and the equipment is well maintained. Best gym in Thakurganj area!', c:'M'},
+ {n:'Rohit Verma', t:'1 month ago', s:'Very good gym with all modern machines. Strength section is huge, cardio area is clean. Crowd is disciplined. Highly recommended for serious fitness.', c:'R'},
+ {n:'Priya Sharma', t:'3 weeks ago', s:'As a girl I was nervous to join gym, but the environment here is safe and supportive. Aerobics and dance batches are so fun. Lost 4kg in 2 months!', c:'P'},
+ {n:'Suraj Gupta', t:'2 months ago', s:'Powerful atmosphere! CrossFit and weight training both available. Owner and coaches are motivating. Fees is reasonable compared to quality. 5 stars.', c:'S'},
+ {n:'Neha Yadav', t:'1 week ago', s:'Clean, spacious and professional. Morning batch is best. Trainers give personal attention even in group. My confidence has totally changed.', c:'N'},
+ {n:'Vikas Maurya', t:'3 months ago', s:'I have trained in 3 gyms in Lucknow, this is the best. Proper guidance for beginners, diet chart given, and results are visible. Worth every rupee.', c:'V'},
+ {n:'Shubham Tiwari', t:'1 month ago', s:'Great location near Manju Tandon Hospital. Easy to reach, parking available. Evening batch is energetic. Music + workout = perfect combo.', c:'S'},
+ {n:'Kajal Singh', t:'2 months ago', s:'Joined for weight loss — trainers made a simple diet + cardio plan. Down 6kg and feeling stronger. Thank you Ultimate Fitness team!', c:'K'},
+];
+const rt=document.getElementById('reviewTrack'), rd=document.getElementById('reviewDots');
+rt.innerHTML=reviews.map(r=>`
+ <div class="review-slide shrink-0 w-[86%] sm:w-[46%] lg:w-[31.8%] bg-[#11161D] border border-white/10 rounded-3xl p-6 flex flex-col hover:border-[#FFD400]/40 transition">
+   <div class="flex items-center gap-3">
+     <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#FFD400] to-[#FF6A00] text-black font-black flex items-center justify-center text-lg">${r.c}</div>
+     <div class="flex-1"><div class="font-bold text-sm flex items-center gap-1">${r.n} <i class="fa-solid fa-circle-check text-blue-500 text-xs"></i></div><div class="text-[11px] text-gray-500">${r.t} • Google</div></div>
+     <span class="w-7 h-7 rounded-full bg-white flex items-center justify-center font-black text-blue-600 text-sm">G</span>
+   </div>
+   <div class="text-[#FFD400] text-[13px] mt-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+   <p class="text-gray-300 text-[13.5px] mt-2 leading-relaxed flex-1">“${r.s}”</p>
+   <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-bold text-gray-500 tracking-widest">VERIFIED GOOGLE REVIEW</div>
+ </div>`).join('');
+let rIdx=0;
+function perView(){ return window.innerWidth>=1024?3:window.innerWidth>=640?2:1; }
+function maxIdx(){ return reviews.length-perView(); }
+function moveReviews(d){ rIdx+=d; if(rIdx<0)rIdx=maxIdx(); if(rIdx>maxIdx())rIdx=0; applyReviews(); }
+function applyReviews(){
+  const slide=rt.children[0]; if(!slide) return;
+  const w=slide.getBoundingClientRect().width+20;
+  rt.style.transform=`translateX(${-rIdx*w}px)`;
+  rd.innerHTML=Array.from({length:maxIdx()+1}).map((_,i)=>`<button onclick="goReview(${i})" class="h-2 rounded-full transition-all ${i===rIdx?'w-8 bg-[#FFD400]':'w-2 bg-white/20'}"></button>`).join('');
+}
+function goReview(i){ rIdx=i; applyReviews(); }
+window.addEventListener('resize',applyReviews); applyReviews();
+setInterval(()=>{ rIdx=rIdx>=maxIdx()?0:rIdx+1; applyReviews(); },4500);
+
+/* ---------- MEMBERSHIP TOGGLE ---------- */
+function setBilling(mode){
+  const mBtn=document.getElementById('btnMonthly'), yBtn=document.getElementById('btnYearly');
+  const isM=mode==='monthly';
+  mBtn.className=isM?'tab-active px-6 py-2.5 rounded-full text-[12px] font-black tracking-widest transition border border-transparent':'px-6 py-2.5 rounded-full text-[12px] font-black tracking-widest transition border border-transparent text-gray-400';
+  yBtn.className=!isM?'tab-active px-6 py-2.5 rounded-full text-[12px] font-black tracking-widest transition border border-transparent':'px-6 py-2.5 rounded-full text-[12px] font-black tracking-widest transition border border-transparent text-gray-400';
+  document.querySelectorAll('.price-val').forEach(el=>{
+    const v=isM?+el.dataset.m:+el.dataset.y;
+    el.textContent='₹'+v.toLocaleString('en-IN');
+  });
+  document.querySelectorAll('.bill-label').forEach(el=>el.textContent=isM?(el.textContent.includes('year')?'/year':el.textContent.includes('quarter')?'/quarter':'/month'):(el.textContent.includes('year')?'/year total':el.textContent.includes('quarter')?'/quarter total':'/total'));
+}
+
+/* ---------- BMI ---------- */
+function calcBMI(){
+  const h=+document.getElementById('bmiH').value/100, w=+document.getElementById('bmiW').value;
+  if(!h||!w) return;
+  const bmi=(w/(h*h)); document.getElementById('bmiVal').textContent=bmi.toFixed(1);
+  let cat,col;
+  if(bmi<18.5){cat='UNDERWEIGHT — MUSCLE GAIN PLAN';col='bg-blue-500/15 text-blue-300 border-blue-500/30';}
+  else if(bmi<25){cat='FIT — MAINTAIN + STRENGTH PLAN';col='bg-green-500/15 text-green-300 border-green-500/30';}
+  else if(bmi<30){cat='OVERWEIGHT — FAT LOSS PLAN';col='bg-yellow-500/15 text-yellow-300 border-yellow-500/30';}
+  else{cat='OBESE — TRANSFORMATION PLAN';col='bg-red-500/15 text-red-300 border-red-500/30';}
+  const c=document.getElementById('bmiCat'); c.textContent=cat; c.className='mt-2 font-black text-[12px] px-4 py-1.5 rounded-full border '+col;
+  document.getElementById('bmiBar').style.width=Math.min(100,(bmi/40*100))+'%';
+}
+calcBMI();
+
+/* ---------- FAQ / FORM / TOAST ---------- */
+function toggleFaq(btn){ const f=btn.parentElement; const was=f.classList.contains('faq-open'); document.querySelectorAll('.faq').forEach(x=>x.classList.remove('faq-open')); if(!was) f.classList.add('faq-open'); }
+function showToast(title,msg){ document.getElementById('toastTitle').textContent=title; document.getElementById('toastMsg').textContent=msg; const t=document.getElementById('toast'); t.classList.remove('hidden'); t.classList.add('flex'); setTimeout(()=>{t.classList.add('hidden');t.classList.remove('flex');},4200); }
+function submitLead(e){
+  e.preventDefault();
+  const n=document.getElementById('fName').value, p=document.getElementById('fPhone').value, g=document.getElementById('fGoal').value;
+  showToast('Trial Booked Successfully! 🎉', `Thanks ${n}! Our team will call ${p} shortly for your FREE ${g} trial.`);
+  window.open(`https://wa.me/919044730631?text=${encodeURIComponent(`Hi Ultimate Fitness! I'm ${n} (${p}). I want FREE trial for: ${g}. Please confirm my slot.`)}`,'_blank');
+  e.target.reset(); return false;
+}
+function subscribe(e){ e.preventDefault(); showToast('Subscribed!', 'You will receive offers & tips on WhatsApp soon.'); e.target.reset(); return false; }
+
+/* ---------- GSAP HERO ENTRANCE ---------- */
+if(window.gsap){
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray('#programs .program-card, #trainers .card-premium').forEach(el=>{
+    el.addEventListener('mouseenter',()=>gsap.to(el,{scale:1.02,duration:.3}));
+    el.addEventListener('mouseleave',()=>gsap.to(el,{scale:1,duration:.3}));
+  });
+  const hc=document.getElementById('heroCard');
+  if(hc){ document.addEventListener('mousemove',e=>{ const x=(e.clientX/window.innerWidth-.5)*10, y=(e.clientY/window.innerHeight-.5)*10; gsap.to(hc,{x:x,y:y,rotateY:x*.6,duration:.6}); }); }
+}
+</script>
+</body>
+</html>
